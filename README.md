@@ -1,13 +1,86 @@
-The "Intelligent Crop Recommendation System using Machine Learning" is designed to assist farmers in selecting the most suitable crops based on specific agricultural parameters. By analyzing soil properties such as nitrogen (N), phosphorus (P), potassium (K) levels, pH, as well as environmental factors like temperature, humidity, and rainfall, the system leverages machine learning algorithms to provide tailored crop recommendations. This data-driven approach aims to enhance crop yield and promote sustainable farming practices.
+# Intelligent Crop Recommendation System using Machine Learning
 
-The project repository includes several key components:
+## Overview
+The **Intelligent Crop Recommendation System** leverages **machine learning** to help farmers select the most suitable crops based on soil and environmental conditions. By analyzing factors such as **soil nutrients (N, P, K), temperature, humidity, pH, and rainfall**, the system predicts the optimal crop to maximize yield and sustainability.
 
-- **Dataset**: A comprehensive dataset (`Crop_recommendation.csv`) containing historical agricultural data used to train and test the machine learning models.
+## Features
+- **Data-driven crop recommendations** based on soil properties and climatic conditions.
+- **Machine Learning models** trained on agricultural datasets.
+- **Flask-based Web Application** for user interaction.
+- **Pre-trained ML models** for accurate and efficient predictions.
+- **Scalable and extendable** for future improvements.
 
-- **Jupyter Notebook**: An interactive notebook (`Crop Recommendation Using Machine Learning.ipynb`) that details the data preprocessing steps, exploratory data analysis, model development, and evaluation processes.
+## Dataset
+The dataset used in this project contains information on:
+- Nitrogen (N)
+- Phosphorus (P)
+- Potassium (K)
+- Temperature
+- Humidity
+- pH Level
+- Rainfall
+- Crop Label (Target Variable)
 
-- **Machine Learning Models**: Pre-trained models (`model.pkl`) and associated scalers (`minmaxscaler.pkl`, `standscaler.pkl`) that facilitate the prediction of suitable crops based on input parameters.
+## Technologies Used
+- **Python** (Pandas, NumPy, Scikit-Learn, Matplotlib, Seaborn)
+- **Machine Learning** (Logistic Regression, Random Forest, Decision Tree, SVM, KNN)
+- **Flask** (For web-based user interaction)
+- **Jupyter Notebook** (For model training and evaluation)
 
-- **Web Application**: A Flask-based application (`app.py`) that provides a user-friendly interface for farmers to input soil and environmental data and receive crop recommendations.
+## Installation & Setup
+Follow these steps to set up and run the project:
 
-By integrating machine learning techniques into agriculture, this system offers farmers actionable insights, enabling informed decision-making to optimize crop selection and improve overall productivity. 
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/sakshipatil1396/Intelligent-Crop-Recommendation-System-using-ML.git
+   ```
+
+2. Navigate to the project folder:
+   ```bash
+   cd Intelligent-Crop-Recommendation-System-using-ML
+   ```
+
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Run the Flask application:
+   ```bash
+   python app.py
+   ```
+
+5. Open the web app in your browser:
+   ```
+   http://127.0.0.1:5000/
+   ```
+
+## Project Structure
+```
+📂 Intelligent-Crop-Recommendation-System
+│── 📂 dataset
+│── 📂 models
+│── 📜 Crop Recommendation Using Machine Learning.ipynb
+│── 📜 app.py
+│── 📜 model.pkl
+│── 📜 requirements.txt
+│── 📜 README.md
+```
+
+## Usage
+1. **Input soil and climate parameters** via the web interface.
+2. **Receive crop recommendations** instantly based on ML predictions.
+3. **Use the insights** to improve farming decisions.
+
+## Results & Performance
+The trained models achieve high accuracy in predicting suitable crops. The project utilizes multiple algorithms and selects the best-performing model.
+
+## Future Enhancements
+- Integrate **real-time weather API** for dynamic predictions.
+- Implement **mobile-friendly UI** for farmers.
+- Extend the dataset with **geographical variations** for broader applications.
+
+## Contributors
+- **Sakshi Patil** - Developer
+
+
